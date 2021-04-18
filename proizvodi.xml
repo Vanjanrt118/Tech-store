@@ -14,7 +14,6 @@
 			<Akcija cena="14820 " datum_isteka="24.04.2021 ">5%</Akcija>
 			<Akcija cena="14820 " datum_isteka="12.01.2021 ">5%</Akcija>
 		</Akcije>
-
 	</Proizvod>
 	<Proizvod >
 		<Naziv>HP</Naziv>
@@ -28,6 +27,5 @@
 		<Akcije>
 			<Akcija cena="12150 " datum_isteka="24.04.2021 ">10%</Akcija>
 		</Akcije>
-
 	</Proizvod>
 </Proizvodi>
