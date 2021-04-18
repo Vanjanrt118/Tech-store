@@ -1,1 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Proizvodi SYSTEM "validacija.dtd">
+
+<Proizvodi >
+	<Proizvod >
+		<Naziv>Samsung</Naziv>
+		<Kategorija >monitori</Kategorija>
+		<Cena valuta="din">56000</Cena>
+		<Tekst>Neki tekst</Tekst>
+		<Oznake>
+			<Oznaka>oznaka1</Oznaka>
+		</Oznake>
+		<Akcije>
+			<Akcija cena="540000 " datum_isteka="24.04.2021 ">5%</Akcija>
+		</Akcije>
+
+	</Proizvod>
+	<Proizvod >
+		<Naziv>HP</Naziv>
+		<Kategorija >monitori</Kategorija>
+		<Cena valuta="din">77000</Cena>
+		<Tekst>Neki tekst</Tekst>
+		<Oznake>
+			<Oznaka>oznaka1</Oznaka>
+			<Oznaka>oznaka2</Oznaka>
+		</Oznake>
+		<Akcije>
+			<Akcija cena="540000 " datum_isteka="24.04.2021 ">5%</Akcija>
+		</Akcije>
+
+	</Proizvod>
+</Proizvodi>
