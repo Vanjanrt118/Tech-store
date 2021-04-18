@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="CenaRestrikcija">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="Proizvodi">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="Proizvod">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Naziv" type="xs:string" />
+							<xs:element name="Kategorija">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="monitori"/>
+										<xs:enumeration value="racunari"/>
+										<xs:enumeration value="zvucnici"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+
+							<xs:element name="Cena">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="CenaRestrikcija" >
+											<xs:attribute name="valuta" type="xs:string" use="required" />
+										</xs:extension>
+									</xs:simpleContent>
+
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Tekst">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="10"/>
+										<xs:maxLength value="180"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Oznake">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="5" name="Oznaka" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Akcije">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Akcija">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="cena" type="xs:unsignedInt" use="required" />
+														<xs:attribute name="datum_isteka" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
