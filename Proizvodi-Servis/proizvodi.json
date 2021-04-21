@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "naziv": "Philips",
+        "kategorija": "monitori",
+        "cena": "12798",
+        "tekst": "tekst3",
+        "oznake": "it,oprema",
+        "akcije": [
+            {
+                "id_akcije": 1,
+                "nova_cena": 11298,
+                "datum_isteka": "2021/05/20"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "naziv": "Samsung",
+        "kategorija": "monitori",
+        "cena": "15999",
+        "tekst": "tekst",
+        "oznake": "it,oprema,samsung",
+        "akcije": [
+            {
+                "id_akcije": 1,
+                "nova_cena": 14890,
+                "datum_isteka": "2021/05/21"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "naziv": "voce",
+        "kategorija": "monitori",
+        "cena": "56",
+        "tekst": "hh",
+        "oznake": "it"
+    }
+]
